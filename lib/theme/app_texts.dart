@@ -7,4 +7,10 @@ class AppTextStyles {
     color: Colors.white,
     fontWeight: FontWeight.bold
   );
+
+  static final TextStyle ButtonText = TextStyle(
+      fontSize: 16,
+      color: Colors.white,
+      fontWeight: FontWeight.bold
+  );
 }

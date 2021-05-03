@@ -1,5 +1,7 @@
+import 'package:chronometer_flutter/Modules/chronometer/Widget/Controls/controls_widget.dart';
 import 'package:chronometer_flutter/Modules/chronometer/Widget/Timer/timer_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class ChronometerPage extends StatefulWidget {
   @override
@@ -18,6 +20,15 @@ class _ChronometerPageState extends State<ChronometerPage> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 20),
               child: TimerWidget(),
+            ),
+            Expanded(
+              flex: 1,
+              child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ControlsWidget()
+              ],
+            )
             )
           ],
         ),
